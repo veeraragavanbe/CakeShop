@@ -1,0 +1,9 @@
+.carousel-item img{
+    opacity: 100%;
+}
+.jumbotron{
+    background-color: #fcdef5;
+}
+.card{
+    border: none
+}

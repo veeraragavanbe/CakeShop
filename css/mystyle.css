@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 .carousel-item img{
     opacity: 100%;
 }
@@ -20,8 +24,26 @@ div.sticky{
     width: 102%;
 }
 
+#nav_rit
+{
+    margin-left: 75%;
+}
+
 @media only screen and (max-width: 600px) {
-    .navbar{
-        width: 104%;
+    .navbar
+    {
+        width: 107%;
     }
+    #nav_rit
+    {
+    margin-left: 0%;
+    }
+    
+    div.sticky{
+        width: 100%;
+        position: static;
+        /* position: fixed; */
+        top: 0;
+        z-index: 11998;
+    } 
   }

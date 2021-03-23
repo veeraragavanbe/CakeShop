@@ -6,6 +6,9 @@ document.getElementById("sub_").onclick = function() {
     var A3 = document.getElementById("Item_type_").value;
     var A4 = document.getElementById('_item_count_').value;
     var A5 = document.getElementById("price_").value;
+
+
+
   
     firebase.database().ref('Bakery/' + A1 + "/" + A2).set({
         Category : A1,
@@ -16,7 +19,5 @@ document.getElementById("sub_").onclick = function() {
         
 
     });
-    alert("Record added successfully");
-
-    
+    alert("Record added successfully");    
 }

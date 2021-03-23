@@ -15,6 +15,20 @@ function fetch_items()
             
         })
         })
+        firebase.database().ref().child('Bakery/Sweet/').on('value', function(snapshot) {
+            snapshot.forEach(
+            function(ChilSnapshot) {
+                // document.getElementById('myimg').src = ChilSnapshot.val().src=ChilSnapshot.val().Link;
+                // let Link1 = ChilSnapshot.val().src = ChilSnapshot.val().Img_url1;
+            
+                let Item_Catagory = ChilSnapshot.val().Category;
+                let Item_Name     = ChilSnapshot.val().Item_name;
+                let Item_Prime    = ChilSnapshot.val().Price;
+    
+                showitems(Item_Catagory,Item_Name,Item_Prime);
+                
+            })
+            })
 
 }
 
